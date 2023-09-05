@@ -3,13 +3,16 @@
 # När programmet körs ska det fråga efter dagens mätarställning, mätarställningen för ett år sedan
 # och hur många liter bensin som har förbrukats under året.
 
+import math 
 
-metersettings_today = float(input('Mätarställning idag? '))
-metersettings_a_year_ago = float(input('Mätarställnig för ett år sedan? '))
-driven_miles = metersettings_today - metersettings_a_year_ago
-gas_consumption = float(input('Antal liter bensin förbrukat: '))
+mätarställning_idag = float(input('Mätarställning idag? '))
+mätarställning_ett_år_sedan = float(input('Mätarställning för ett år sedan? '))
 
-consumption_per_mile = gas_consumption / driven_miles
-print(type(consumption_per_mile))
+körda_mil = mätarställning_idag - mätarställning_ett_år_sedan
 
-print(f'Förbrukning per mil: {consumption_per_mile: .2f}')
+print(f'Antal körda mil: {körda_mil}')
+
+bensin_förbrukning = float(input('Antal liter bensin förbrukat: '))
+förbrukning_per_mile = bensin_förbrukning / körda_mil
+
+print(f'Förbrukning per mil: {förbrukning_per_mile:.2f}')
