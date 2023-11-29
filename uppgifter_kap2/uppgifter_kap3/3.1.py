@@ -9,10 +9,15 @@
 
 import math
 
-minuter = int(input('Antal minuter per månad? '))
-if minuter <= 33:
-    print('Välj Kontant')
-elif minuter > 33 and minuter <= 66:
-    print('Välj Normal')
+minuter_per_månad = int(input('Ange hur många minuter du pratar i genomsnitt verje månad: '))
+
+if minuter_per_månad <= 33:
+    print ('Kontantkort är ditt bästa val.')
+elif minuter_per_månad > 33 and minuter_per_månad < 66:
+    print ('Normal tycks vare rätt abonemang för dig.')
 else:
-    print('Välj Plus')    
+    print ('Plus är rätt abonemang för dig.')
+
+
+
+

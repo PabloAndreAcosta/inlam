@@ -10,4 +10,5 @@ y2 = float(input('punkt y2: '))
 
 distance = math.sqrt((x1 - x2)**2 + (y1 - y2)**2)
 
+
 print(f's: {distance: .4f}')

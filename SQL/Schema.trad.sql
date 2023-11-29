@@ -1,0 +1,27 @@
+DROP TABLE IF EXISTS Trad;
+DROP TABLE IF EXISTS Applen;
+DROP TABLE IF EXISTS Maskar;
+
+
+CREATE TABLE Trad(
+Trad_ID INTERGER,
+Hojd INTERGER
+);
+
+CREATE table Applen(
+Applen_ID INTERGER,
+Farg VARCHAR (10),
+Vaxer_på INTERGER
+);
+
+CREATE TABLE Maskar(
+Maskar_ID INTERGER NOT NULL,  
+Namn TEXT (20),
+Langd INTERGER,
+Bor_i INTERGER
+);
+
+
+
+
+

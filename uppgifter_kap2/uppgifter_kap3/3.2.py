@@ -5,12 +5,12 @@ import math
 
 r = float(input('Vad är sfärens radie? '))
 
-sfär_volym = ((4 * math.pi * r**3) /3)
+sfär_volym = (4 * math.pi * r **3) /3
 
-sfär_area = 4 * math.pi * r**2
+sfär_area = 4 * math.pi * r **2
 
 print(f'Volume: {sfär_volym: .2f}')
 print(f'Area: {sfär_area: .2f}')
 
 if r <= 0:
-    print ('Error')
+    print ('Error.')

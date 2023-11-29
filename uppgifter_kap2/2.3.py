@@ -3,8 +3,8 @@
 # Man kan använda formeln °C =(°F-32)*5/9 för att omvandla från °F till °C.
 # Skriv ett program som läser in  temperatur i Fahrenheit (°F) och omvandlar det till Celcius (°C).
 
-fahrenheit = float(input('Ange grader i Fahrenheit: '))
+fahrenheit = float(input('Ange temperatur i Fahrenheit '))
 
-celsius = (fahrenheit - 32) * 5/9
+Celsius = (fahrenheit - 32) * 5/9
 
-print(f'{int(fahrenheit)}°F motsvarar {int(celsius)}°C')
+print (f'Grader Fahrenheit {fahrenheit: .1f} F° i grader Celcius {Celsius: .1f} C°.')
